@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>효성그룹 연습</title>
+    <style>
+        .content_wrap {padding: 50px 0;}
+        .gray_bg {background: #ccc;}
+        .black_bg {background: #000;}
+        .container {width: 1335px; margin: auto; display: flex; flex-wrap: wrap;}
+        .container>div {height: 320px; margin: 0 10px 60px 10px; background: #fff;}
+        .col2 {width: calc(50% - 20px);}
+        .col3 {width: calc(33.3333% - 20px);}
+        .col4 {width: calc(25% - 20px);}
+        .col43 {width: 75%;}
+        .small {display: flex; justify-content: space-between; align-items: flex-end; }
+        .small .col3 {background: pink; height: 80%; transition: 0.5s;}
+        .small .col3:hover {height: 100%;}
+    </style>
+</head>
+<body>
+    <!-- id: 주민등록번호, class : 같은 스타일 만들려고 -->
+    <div id="wrap">
+        <header id="header"></header>
+        <div id="main_content">
+            <div class="main_visual">visual</div>
+            <div class="content_wrap gray_bg">
+                <div class="container">
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                    <div class="col2">50%</div>
+                    <div class="col2">50%</div>
+                    <div class="col2 small">
+                        <div class="col3">small/3</div> <!--부모가 다른 3등분-->
+                        <div class="col3">small/3</div>
+                        <div class="col3">small/3</div>
+                    </div>
+                    <div class="col3">33.3333%</div>
+                    <div class="col3">33.3333%</div>
+                    <div class="col3">33.3333%</div>
+                </div>
+            </div>
+            <div class="content_wrap black_bg">
+                <div class="container">
+                    <div class="col2">50%</div>
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                    <div class="col3">33.3333%</div>
+                    <div class="col3">33.3333%</div>
+                    <div class="col3">33.3333%</div>
+                    <div class="col43">75%</div>
+                    <div class="col2">50%</div>
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                </div>
+            </div>
+            <div class="content_wrap gray_bg">
+                <div class="container">
+                    <div class="col4">25%</div>
+                    <div class="col4">공백</div>
+                    <div class="col2">50%</div>
+                    <div class="col4">공백??</div>
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                    <div class="col4">25%</div>
+                    <div class="col3">33.3333%</div>
+                    <div class="col3">33.3333%</div>
+                    <div class="col3">33.3333%</div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            
+        </footer>
+    </div>
+</body>
+</html>

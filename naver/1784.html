@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/common/favicon2.png">
+    <title>1784 네이버</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <style>
+        /* main */
+        
+        .content_box {
+            margin: 85px 0; padding: 20px 0;
+            display: flex; justify-content: space-between; 
+            background: lightblue;}
+        .sub_h3 {width: 178px;height: 60px; background: #ccc;}
+        .sub_desc {width: 850px; height: 75px; background: pink;}
+        .sub_desc1 {
+            display: flex;justify-content: space-between; flex-wrap: wrap;
+            width: 800px; 
+            border-top: 2px solid gray;}
+        .sub_desc1 .items {width: calc(33% - 22px); height: 326px; background: lavender; margin: 44px 0;}
+        .sub_desc2 {width: 850px;}
+        .sub_desc2 video {width: 100%;}
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <h1><a href="../index.html"><span class="hide_txt">Naver</span></a></h1>
+                <nav>
+                <ul id="gnb">
+                    <li><a href="#">네이버</a>
+                        <ul class="dep2">
+                            <li>
+                                <a href="#">NAVER</a>
+                                <ul class="dep3">
+                                <li><a href="#">네이버소개</a></li>
+                                <li><a href="#">1784 소개</a></li>
+                                <li><a href="../naver/history.html">주요연혁</a></li>
+                                <li><a href="#">수상내역</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">주요관계사</a></li>
+                            <li>
+                                <a href="#">제휴제안</a>
+                                <ul class="dep3">
+                                    <li><a href="#">제휴제안 안내</a></li>
+                                    <li><a href="#">제휴제안 등록</a></li>
+                                    <li><a href="#">검토현황</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="#">서비스</a>
+                        <ul class="dep2">
+                            <li><a href="#">Featured <br>Services</a></li>
+                            <li><a href="#">For<br>Business</a></li>
+                            <li><a href="../service/creators.html">For<br>Creators</a></li>
+                            <li><a href="../service/ForDeveloper.html">For<br>Developers</a></li>
+                            <li><a href="#">All<br>Services</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">가치실현</a>
+                        <ul class="dep2">
+                            <li><a href="#">원칙</a></li>
+                            <li><a href="#">정책</a></li>
+                            <li><a href="#">그린 임팩트</a></li>
+                            <li><a href="#">소셜 임팩트</a></li>
+                            <li><a href="#">리서치</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보</a>
+                        <ul class="dep2">
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="../promotion/ads.html">광고 영상</a></li>
+                            <li><a href="#">미디어 행사</a></li>
+                            <li><a href="#">커뮤니케이션 채널</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">투자정보</a>
+                        <ul class="dep2">
+                            <li><a href="#">기업지배구조</a></li>
+                            <li><a href="#">공시정보</a></li>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">재무제표</a></li>
+                            <li><a href="#">IR일정</a></li>
+                            <li><a href="#">IR자료실</a></li>
+                            <li><a href="#">결산공고</a></li>
+                            <li><a href="#">공고</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../story/story.html">스토리</a></li>
+                    <li><a href="#" target="_blank">채용</a></li>
+                </ul>
+                </nav>
+                <div class="util">
+                    <div class="language">
+                        <a href="#" class="kor">KOR</a>
+                        <a href="#">ENG</a>
+                    </div>
+                    <button class="btn_sitemap">
+                        <span class="hide_txt">전체메뉴보기</span>
+                        <span class="ham_btn ham_top"></span>
+                        <span class="ham_btn ham_mid"></span>
+                        <span class="ham_btn ham_bottom"></span>
+                    </button>
+                </div>
+                <div class="sitemap">                             
+                    <ul class="sitemap_container">
+                        <li><a href="#">네이버</a>
+                            <ul class="dep2">
+                                <li>
+                                    <a href="#">NAVER</a>
+                                        <ul class="dep3">
+                                        <li><a href="#">네이버소개</a></li>
+                                        <li><a href="#">1784 소개</a></li>
+                                        <li><a href="../naver/history.html">주요연혁</a></li>
+                                        <li><a href="#">수상내역</a></li>
+                                        </ul>
+                                </li> 
+                                <li><a href="#">주요관계사</a></li>
+                                <li>
+                                    <a href="#">제휴제안</a>
+                                    <ul class="dep3">
+                                        <li><a href="#">제휴제안 안내</a></li>
+                                        <li><a href="#">제휴제안 등록</a></li>
+                                        <li><a href="#">검토현황</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            </li>
+                        <li><a href="#">서비스</a>
+                            <ul class="dep2">
+                                <li><a href="#">Featured <br>Services</a></li>
+                                <li><a href="#">For<br>Business</a></li>
+                                <li><a href="../service/creators.html">For<br>Creators</a></li>
+                                <li><a href="../service/ForDeveloper.html">For<br>Developers</a></li>
+                                <li><a href="#">All<br>Services</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">가치실현</a>
+                            <ul class="dep2">
+                                <li><a href="#">원칙</a></li>
+                                <li><a href="#">정책</a></li>
+                                <li><a href="#">그린 임팩트</a></li>
+                                <li><a href="#">소셜 임팩트</a></li>
+                                <li><a href="#">리서치</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">홍보</a>
+                            <ul class="dep2">
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="../promotion/ads.html">광고 영상</a></li>
+                                <li><a href="#">미디어 행사</a></li>
+                                <li><a href="#">커뮤니케이션 채널</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">투자정보</a>
+                            <ul class="dep2">
+                                <li><a href="#">기업지배구조</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">주가정보</a></li>
+                                <li><a href="#">재무제표</a></li>
+                                <li><a href="#">IR일정</a></li>
+                                <li><a href="#">IR자료실</a></li>
+                                <li><a href="#">결산공고</a></li>
+                                <li><a href="#">공고</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../story/story.html">스토리</a></li>
+                        <li><a href="#" target="_blank">채용</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="the_testbed">
+            <div class="location">
+                <div class="container">
+                    <a href="/">홈</a>
+                    <span>&gt;</span>
+                    <a href="#">NAVER</a><!--1dep-->
+                    <span>&gt;</span>
+                    <span>1784</span><!--2dep-->
+                </div>
+                </div>
+                <div class="sub_title">
+                    <h2>1784 THE TESTBED</h2>
+                    <p>네이버 1784에서 우리는 혁신을 현실로 만들고 있습니다. <br>
+                        네이버의 다양한 기술들로 실험과 도전, 융합을 통해 새로운 기회와 가능성을 만들어 갑니다.</p>
+                    <img src="../img/naver/img_spot_1784.jpg" alt="">
+                </div>
+                <div class="sub_content">
+                    <div class="content_box">
+                        <div class="sub_h3"></div>
+                        <div class="sub_desc"></div>
+                    </div>
+                    <div class="content_box">
+                        <div class="sub_h3"></div>
+                        <div class="sub_desc1">
+                            <div class="items"></div>
+                            <div class="items"></div>
+                            <div class="items"></div>
+                        </div>
+                    </div>
+                    <div class="content_box">
+                        <div class="sub_h3"></div>
+                        <div class="sub_desc2">
+                            <video src=""></video>
+                        </div>
+                    </div>
+
+                </div>                 
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer_menu">
+                    <img src="../img/common/footer_logo.png" alt="naver">
+                    <ul>
+                        <li><a href="#">제휴제안</a></li>
+                        <li><a href="#">기업윤리 상담센터</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="family_site">
+                    <button>자회사 바로가기</button>
+                    <ul>
+                        <li><a href="#" target="_blank">LINE</a></li>
+                        <li><a href="#" target="_blank">NAVER Labs</a></li>
+                        <li><a href="#" target="_blank">NAVER Cloud</a></li>
+                        <li><a href="#" target="_blank">SNOW</a></li>
+                        <li><a href="#" target="_blank">Webtoon</a></li>
+                        <li><a href="#" target="_blank">Works Mobile</a></li>
+                        <li><a href="#" target="_blank">NAVER FINANCIAL</a></li>
+                    </ul>
+                </div>
+                <p class="copyright"><span class="hide_txt"></span>Copyright&copy;NAVER Corp. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

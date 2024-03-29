@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>높이의 가변값</title>
+    <style>
+        body {margin-bottom: 560px;}
+        div{margin: 20px 0;}
+        .img {border: 1px solid red;}
+        .box1 { /*width :533 height :400 , 높이는 자손따라간다.*/
+            width: 700px; height: 525px; margin: 20px 0;
+            padding: 10%;
+            border: 3px solid green; }
+        .box2 {
+            width: 50%; 
+            border: 3px solid orange;
+        }
+        .box3{
+            width: 50%;
+            border: 3px solid darkblue;
+            background: url(/naver.corp/img/main/img_main_content13.png) no-repeat;
+            background-size: 100% auto;
+        }
+        .box3 .inner {
+            /* padding과 margin의 %값은 방향과 상관없이 부모요소의 width 값을 기준으로함 */
+            margin: 0; padding-top: 75%; height: 0;background: rgba(255, 0, 0, 0.2);}
+        .box1 img {width: 100%; }
+        .box2 img {width: 100%;}
+        /* 
+        * 블럭요소의 height 값은 포함한 자손의 면적에 비례 
+        * height의 %값이 적용이 되려면 블럭의 부모 요서에 고정값이 존재해야함
+        */
+    </style>
+</head>
+<body>
+    <img src="/naver.corp/img/main/img_main_content13.png" alt="" class="img">
+    <div class="box1">
+        <img src="/naver.corp/img/main/img_main_content13.png" alt="">
+    </div>
+    <div class="box2">
+        <img src="/naver.corp/img/main/img_main_content13.png" alt="">
+    </div>
+    <div class="box3">
+        <!-- 
+            css의 background 속성을 이용한 높이가변 방법
+            * 가변하는 박스의 자손 요소를 생성 후 밑에거 적용
+            - padding-top (padding-bottom)
+            - position 
+        -->
+        <div class="inner">inner</div>
+    </div>
+    <div class="box4">
+        <div class="inner">
+            inner <br> inner <br> inner <br>
+        </div>
+    </div>
+    <style>
+        .box5{
+            width: 1000px; 
+            /*height 현재 50%의 반(50%) 
+            body의 가로크기가 1000이면 .box5의 가로크기는 500이고, 세로는 250*/
+            /* padding-top: 자손요소에게 사용;
+            margin, padding의 % 값은 부모의 가로크기를 기준
+            body가 1000이면 paading-top:50% 일때 500 ->자손에게 줘야함.
+            */
+            border: 5px dashed purple;
+            background: url(grid.gif);
+        }
+        .box5 .inner {margin: 0; height: 0;padding-top: 50%; background: gold; position: relative;}
+        .box5 .inner img{width: 300px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+    </style>
+    <div class="box5">
+        <div class="inner">
+            <img src="/naver.corp/img/promotion/20221220203850_1.png" alt="">
+        </div>
+    </div>
+    <style>
+        .ex1 {background: #000;}
+        .ex1 .inner {
+            background: url(/naver.corp/img/naver/img_spot_1784.jpg) no-repeat;
+            background-size: 100% auto;
+            /* 배경이미지는 브라우저 크기에 따라 변동 */
+            padding-top: 23.958%; position: relative;
+        } 
+        .ex1 h2 {
+            margin: 0;
+            color: #fff; font-size: 60px; 
+            position: absolute; left: 50%;  top: 50%;  transform: translate(-50%,-50%);
+        }
+        /* 영역 안에 정중앙 정렬 */
+    </style>
+    <div class="ex1">
+        <div class="inner">
+            <h2>Page Title</h2>
+        </div>
+    </div>
+    <style>
+        .ex2 {padding: 0 10%;}
+        .ex2 .container{
+            display: flex; justify-content: space-between;
+        }
+        .ex2 .box {
+            width: calc(50% - 15px); border: 1px solid #000; 
+            background: url(/naver.corp/img/스토리/20230220125504_1.jpg) no-repeat;
+            background-size: 100% auto; position: relative;
+        }
+        .ex2 .txt_box { margin: 0;padding-top: 62.5%;}
+        .ex2 .box strong {
+            display: block;     
+            font-size: 30px; font-weight: 800; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+            background: pink;
+        }
+    </style>
+    <div class="ex2">
+        <div class="container">
+            <div class="box"><div class="txt_box"><strong>TEXT</strong></div></div>
+            <div class="box"><div class="txt_box"><strong>TEXT</strong></div></div>
+        </div>
+    </div>
+</body>
+</html>
